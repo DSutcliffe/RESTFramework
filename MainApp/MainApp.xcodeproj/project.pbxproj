@@ -13,7 +13,23 @@
 		616AB63B297549BA0043A8DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616AB639297549BA0043A8DA /* Main.storyboard */; };
 		616AB63D297549BB0043A8DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616AB63C297549BB0043A8DA /* Assets.xcassets */; };
 		616AB640297549BB0043A8DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616AB63E297549BB0043A8DA /* LaunchScreen.storyboard */; };
+		61BF01832975A37000604C1C /* REST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BF01822975A36F00604C1C /* REST.framework */; };
+		61BF01842975A37000604C1C /* REST.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61BF01822975A36F00604C1C /* REST.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61BF01852975A37000604C1C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				61BF01842975A37000604C1C /* REST.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		616AB630297549BA0043A8DA /* MainApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		616AB63C297549BB0043A8DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		616AB63F297549BB0043A8DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		616AB641297549BB0043A8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61BF01822975A36F00604C1C /* REST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = REST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61BF01832975A37000604C1C /* REST.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				616AB632297549BA0043A8DA /* MainApp */,
 				616AB631297549BA0043A8DA /* Products */,
+				61BF01812975A36F00604C1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = MainApp;
 			sourceTree = "<group>";
 		};
+		61BF01812975A36F00604C1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61BF01822975A36F00604C1C /* REST.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				616AB62C297549B90043A8DA /* Sources */,
 				616AB62D297549B90043A8DA /* Frameworks */,
 				616AB62E297549B90043A8DA /* Resources */,
+				61BF01852975A37000604C1C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

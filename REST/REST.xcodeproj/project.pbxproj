@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		616AB655297549F50043A8DA /* REST.h in Headers */ = {isa = PBXBuildFile; fileRef = 616AB654297549F50043A8DA /* REST.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61BF018A2976E39C00604C1C /* DVLAVehicleDataRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BF01892976E39C00604C1C /* DVLAVehicleDataRestClient.swift */; };
+		61BF018C2976E6C100604C1C /* DVLAVehicleDataResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BF018B2976E6C100604C1C /* DVLAVehicleDataResponseDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		616AB651297549F50043A8DA /* REST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = REST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		616AB654297549F50043A8DA /* REST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REST.h; sourceTree = "<group>"; };
+		61BF01892976E39C00604C1C /* DVLAVehicleDataRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVLAVehicleDataRestClient.swift; sourceTree = "<group>"; };
+		61BF018B2976E6C100604C1C /* DVLAVehicleDataResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVLAVehicleDataResponseDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +49,27 @@
 		616AB653297549F50043A8DA /* REST */ = {
 			isa = PBXGroup;
 			children = (
-				616AB65B29754A3E0043A8DA /* DTOs */,
+				61BF01862975A42700604C1C /* RestClients */,
+				61BF017C2975A18100604C1C /* DTOs */,
 				616AB654297549F50043A8DA /* REST.h */,
 			);
 			path = REST;
 			sourceTree = "<group>";
 		};
-		616AB65B29754A3E0043A8DA /* DTOs */ = {
+		61BF017C2975A18100604C1C /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
+				61BF018B2976E6C100604C1C /* DVLAVehicleDataResponseDTO.swift */,
 			);
 			path = DTOs;
+			sourceTree = "<group>";
+		};
+		61BF01862975A42700604C1C /* RestClients */ = {
+			isa = PBXGroup;
+			children = (
+				61BF01892976E39C00604C1C /* DVLAVehicleDataRestClient.swift */,
+			);
+			path = RestClients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +115,7 @@
 				TargetAttributes = {
 					616AB650297549F50043A8DA = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -137,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61BF018C2976E6C100604C1C /* DVLAVehicleDataResponseDTO.swift in Sources */,
+				61BF018A2976E39C00604C1C /* DVLAVehicleDataRestClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +283,7 @@
 		616AB659297549F50043A8DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -286,6 +304,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -294,6 +313,7 @@
 		616AB65A297549F50043A8DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
