@@ -7,6 +7,13 @@
 
 import Foundation
 
+public enum RestClientError: Error {
+    case error400    // Bad Request
+    case error404    // Vehicle Not Found
+    case error500    // Internal Server Error
+    case error503    // Service Unavailable
+}
+
 public protocol DVLAVehicleDataRestClientProtocol {
     typealias Completion = (Result<DVLAVehicleDataResponseDTO, Error>) -> Void
     func getVehicleData(completion: @escaping Completion)
