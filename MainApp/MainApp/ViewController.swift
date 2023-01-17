@@ -17,14 +17,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         buttonA.setTitle("Vehicle Data", for: .normal)
-        buttonB.setTitle("???", for: .normal)
+        buttonB.setTitle("New API", for: .normal)
     }
 
     @IBAction func buttonAPressed(_ sender: Any) {
-        print("Button A")
+        print("Vehicle Data Button")
         
         DVLAVehicleDataRestClient().getVehicleData { result in
-            // Not entering Closure!!!
+            // Not completed "completion()" in RestClient
             print("In Closure")
             
             switch result {
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonBPressed(_ sender: Any) {
-        print("Button B")
+        print("New API Button")
     }
     
 }

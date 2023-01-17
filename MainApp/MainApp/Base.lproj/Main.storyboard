@@ -16,18 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSr-cJ-bua">
-                                <rect key="frame" x="159" y="203" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSr-cJ-bua">
+                                <rect key="frame" x="16" y="408.66666666666669" width="361" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="buttonAPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NnS-TB-7di"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GK5-SW-2dc">
-                                <rect key="frame" x="159" y="308" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GK5-SW-2dc">
+                                <rect key="frame" x="16" y="451.66666666666669" width="361" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -37,6 +35,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rSr-cJ-bua" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0bE-nG-2v1"/>
+                            <constraint firstItem="GK5-SW-2dc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="O7H-2G-nlj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GK5-SW-2dc" secondAttribute="trailing" constant="16" id="Qoe-d0-3C0"/>
+                            <constraint firstItem="rSr-cJ-bua" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TnT-Ug-fCl"/>
+                            <constraint firstItem="GK5-SW-2dc" firstAttribute="top" secondItem="rSr-cJ-bua" secondAttribute="bottom" constant="8" id="Up4-fh-wFZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rSr-cJ-bua" secondAttribute="trailing" constant="16" id="rGZ-ex-DWU"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonA" destination="rSr-cJ-bua" id="HSH-Ha-biV"/>

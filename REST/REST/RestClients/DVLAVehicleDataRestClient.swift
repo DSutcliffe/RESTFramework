@@ -33,7 +33,7 @@ public class DVLAVehicleDataRestClient: DVLAVehicleDataRestClientProtocol {
 
         request.allHTTPHeaderFields = header
 
-        let registrationNumber = "XDJ 5X"
+        let registrationNumber = "VIP1"
 
         let jsonObject = ["registrationNumber": "\(registrationNumber)"]
 
@@ -58,6 +58,8 @@ public class DVLAVehicleDataRestClient: DVLAVehicleDataRestClientProtocol {
             guard let safeData = data else {
                 return
             }
+            
+//            completion()
             
             DispatchQueue.main.async {
                 self.decodeJSON(vehicleData: safeData)
